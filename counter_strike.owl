@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#is_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#is_part_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#is_used_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#is_used_by"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#uses"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Arma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Arma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Awper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Awper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#uses"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Pistola"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#uses"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#RifleDePrecisao"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#JogadorPrincipal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Jogador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Jogador"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#JogadorPrincipal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#JogadorPrincipal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Jogador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#JogadorReserva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#JogadorReserva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Jogador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Lurker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Lurker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#JogadorPrincipal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Pistola -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Pistola">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Arma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Riffler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Riffler">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#uses"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Pistola"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#uses"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#RifleAutomatico"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#JogadorPrincipal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Rifle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Rifle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Arma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#RifleAutomatico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#RifleAutomatico">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Riffler"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Rifle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#RifleDePrecisao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#RifleDePrecisao">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Awper"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Rifle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#Time">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#has"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#JogadorReserva"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#has"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ramon/ontologies/2022/9/untitled-ontology-13#JogadorPrincipal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
